@@ -1,4 +1,4 @@
-package dynamic_Programming;
+package dynamic_Programming.knapsack;
 /*
 weight array : w[]
 value array  : v[]

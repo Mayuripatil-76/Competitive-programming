@@ -1,16 +1,28 @@
-package dynamic_Programming.knapsack.subproblem;
+package dynamic_Programming.knapsack.equalSumPartition;
 
-public class SubsetSumRecursive {
-
+public class EqualSumPartition_Recursive {
     public static void main( String args[] )
     {
 
         // no of items , weight and value associated with the items  ;
 
-        int n = 6 ;
-        int a[] = new int[] {3, 34, 4, 12, 5, 2};
-        int sum = 30 ;
-        System.out.println(isSubsetSum(n, a, sum));
+        int n = 4 ;
+        int a[] = new int[] {1, 5, 11, 6};
+        int sum = 0 ;
+        for( int i = 0 ; i<n ; i++ )
+        {
+            sum+=a[i] ;
+        }
+        if( sum%2 != 0 )
+        {
+            System.out.println("false");
+        }
+        else
+        {
+            sum/=2 ;
+            System.out.println(isSubsetSum(n, a, sum));
+        }
+
     }
 
     public static boolean isSubsetSum(int N, int arr[], int sum){

@@ -32,7 +32,7 @@ public class CountofSubsetSum_top_down_DP {
 
         for( int i = 1 ; i<= N ; i++ )
         {
-            for( int j = 1 ; j<= sum ; j++ )
+            for( int j = 0 ; j<= sum ; j++ )
             {
                 if( arr[i-1] <= j)
                 {

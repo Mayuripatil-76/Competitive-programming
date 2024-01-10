@@ -33,7 +33,7 @@ public class Knapsack_0_1_top_down__DP {
     {
         for( int i = 1 ; i<w.length+1 ; i++ )
         {
-            for( int j = 1 ; j<W+1 ; j++ )
+            for( int j = 0 ; j<W+1 ; j++ )
             {
                 if( w[i-1] <= j )
                 {

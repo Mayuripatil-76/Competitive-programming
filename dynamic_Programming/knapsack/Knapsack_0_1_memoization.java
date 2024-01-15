@@ -53,6 +53,7 @@ public class Knapsack_0_1_memoization {
         if( dp[n][W] != -1 )
         {
             return dp[n][W] ;
+
         }
         if( w[n-1] > W )            // if value of the item is greater than total capacity(W) , do not include the item into bag
         {

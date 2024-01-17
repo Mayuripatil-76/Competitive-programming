@@ -17,6 +17,9 @@ public class CountOfSubsetWithGivenDiff_recursive {
         }
 
         /*
+
+        find the count of subsets whose difference is given 
+
          s1 - s2 = diff ;
          s1 + s2 = sum ;
          ===============

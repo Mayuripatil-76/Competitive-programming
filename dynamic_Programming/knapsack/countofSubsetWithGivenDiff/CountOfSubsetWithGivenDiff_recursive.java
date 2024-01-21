@@ -18,7 +18,7 @@ public class CountOfSubsetWithGivenDiff_recursive {
 
         /*
 
-        find the count of subsets whose difference is given 
+        find the count of subsets whose difference is given
 
          s1 - s2 = diff ;
          s1 + s2 = sum ;
@@ -34,14 +34,15 @@ public class CountOfSubsetWithGivenDiff_recursive {
 
     public static int countno_of_subsets_with_given_diff( int n , int a[] , int sum )
     {
-        if( n == 0 )
-        {
-            return 0 ;
-        }
         if( sum == 0 )
         {
             return 1 ;
         }
+        if( n == 0 )
+        {
+            return 0 ;
+        }
+
         if( a[n-1] <= sum )
         {
             return countno_of_subsets_with_given_diff(n-1 , a , sum-a[n-1]) + countno_of_subsets_with_given_diff(n-1 , a , sum) ;
